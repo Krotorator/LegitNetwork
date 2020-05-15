@@ -337,10 +337,17 @@ body {
 .header {
   padding: 70px 0;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start; }
   @media screen and (max-width: 768px) {
     .header {
-      padding: 20px 0; } }
+      padding: 20px 0 10px; } }
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 177px;
+    height: 30px; } }
 
 .banner__slide {
   align-self: flex-start;
@@ -486,6 +493,9 @@ body {
     @media screen and (max-width: 768px) {
       .banner-swiper-container .swiper-slide {
         align-items: flex-start; } }
+    @media screen and (max-width: 450px) {
+      .banner-swiper-container .swiper-slide {
+        padding: 70px 0 100px; } }
 
 .banner-btn {
   font-weight: bold;
@@ -530,13 +540,6 @@ body {
       top: auto;
       bottom: 150px;
       transform: translateX(-50%); } }
-  @media screen and (max-width: 450px) {
-    .banner-btn {
-      align-self: center;
-      width: 150px;
-      height: 150px;
-      font-size: 16px;
-      position: absolute; } }
   @media screen and (max-width: 450px) and (min-height: 620px) {
     .banner-btn {
       bottom: 150px; } }
@@ -545,6 +548,13 @@ body {
       width: 135px;
       height: 135px;
       bottom: 100px; } }
+  @media screen and (max-width: 450px) {
+    .banner-btn {
+      align-self: center;
+      width: 150px;
+      height: 150px;
+      font-size: 16px;
+      position: absolute; } }
   .banner-btn__arrow {
     position: absolute;
     width: 33.3333%;

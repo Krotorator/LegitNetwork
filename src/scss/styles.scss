@@ -44,8 +44,16 @@ body {
     padding: 70px 0;
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: flex-start;
     @media screen and(max-width: 768px) {
-        padding: 20px 0;
+        padding: 20px 0 10px;
+    }
+}
+.logo {
+    @media screen and(max-width: 768px) {
+        width: 177px;
+        height: 30px;
     }
 }
 .banner {
@@ -221,6 +229,9 @@ body {
         @media screen and(max-width: 768px) {
             align-items: flex-start;
         }
+        @media screen and(max-width: 450px) {
+            padding: 70px 0 100px;
+        }
     }
 }
 
@@ -282,13 +293,6 @@ body {
         transform: translateX(-50%);
     }
 
-    @media screen and(max-width: 450px) {
-        align-self: center;
-        width: 150px;
-        height: 150px;
-        font-size: 16px;
-        position: absolute;
-    }
     @media screen and(max-width: 450px) and(min-height: 620px) {
         bottom: 150px;
     }
@@ -296,6 +300,13 @@ body {
         width: 135px;
         height: 135px;
         bottom: 100px;
+    }
+    @media screen and(max-width: 450px) {
+        align-self: center;
+        width: 150px;
+        height: 150px;
+        font-size: 16px;
+        position: absolute;
     }
     &__arrow {
         position: absolute;
